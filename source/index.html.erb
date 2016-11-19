@@ -30,7 +30,7 @@
 
                         <div class="yui-u">
                             <div class="contact-info">
-                                <h3><a id="pdf" href="resume.pdf"><%= data.resume.headers.download %></a></h3>
+                                <h3 class="pdf-link"><a id="pdf" href="resume.pdf"><%= data.resume.headers.download %></a></h3>
                                 <h3><a class="email donotexpand" href="mailto:<%= data.resume.info.email %>"><%= data.resume.info.email %></a></h3>
                                 <% if data.resume.info.homepage? %>
                                     <h3 class="url"><a class="donotexpand" href=<%= data.resume.info.homepage %> target=_blank><%= data.resume.info.homepage %></a></h3>
@@ -38,18 +38,20 @@
                                 <% if data.resume.info.phone %>
                                     <h3 class="tel"><%= data.resume.info.phone %></h3>
                                 <% end %>
-                                <span class="adr">
-                                    <h3>
-                                        <span class="street-address"><%= data.resume.info.address.street %></span>
-                                    </h3>
-                                    <h3>
-                                        <span class="locality"><%= data.resume.info.address.city %></span>,
-                                        <span class="region"><%= data.resume.info.address.region %></span>
-                                        <span class="postal-code"><%= data.resume.info.address.postal_code %></span>
-                                    </h3>
-                                    <h3>
-                                        <span class="country"><%= data.resume.info.address.country %></span>
-                                    </h3>
+                                <% if data.resume.info.address? %>
+                                  <span class="adr">
+                                      <h3>
+                                          <span class="street-address"><%= data.resume.info.address.street %></span>
+                                      </h3>
+                                      <h3>
+                                          <span class="locality"><%= data.resume.info.address.city %></span>,
+                                          <span class="region"><%= data.resume.info.address.region %></span>
+                                          <span class="postal-code"><%= data.resume.info.address.postal_code %></span>
+                                      </h3>
+                                      <h3>
+                                          <span class="country"><%= data.resume.info.address.country %></span>
+                                      </h3>
+                                <% end %>
                             </div><!--// .contact-info -->
                         </div>
                     </div><!--// .yui-gc -->
@@ -83,26 +85,36 @@
                                 </div>
                             </div><!--// .yui-gf -->
 
+                            <% if data.resume.headers? %>
+                            <div class="yui-gf no-page-breaker">
+                                <div class="yui-u first">
+                                    <h2><%= data.resume.headers.level %></h2>
+                                </div>
+                                <div class="yui-u" class="vcalendar">
+                                    <div class="no-page-breaker">
+                                    <% data.resume.level.each do |level| %>
+                                        <div class="level vevent summary vcard">
+                                          <h3><%= level.name %></h3>
+                                          <p><%= level.desc %></p>
+                                        </div>
+                                    <% end %>
+                                    </div>
+                                </div>
+                            </div><!--// .yui-gf -->
+                            <% end %>
+
                             <div class="yui-gf no-page-breaker">
                                 <div class="yui-u first">
                                     <h2><%= data.resume.headers.techs %></h2>
                                 </div>
-                                <div class="yui-u">
-                                    <% data.resume.alphabetsoup.each.with_index do |skill, index| %>
-                                        <% if (index + 1) % 3 == 1 %>
-                                            <ul class="soup">
-                                        <% end %>
-
-                                        <li class="skill" rel="tag"><%= skill %></li>
-
-                                        <% if (index + 1) % 3 == 0 %>
-                                            </ul>
-                                        <% end %>
+                                <div class="yui-u alphabetsoup">
+                                    <% data.resume.alphabetsoup.each.with_index do |skill| %>
+                                        <span class="tag" rel="tag"><%= skill %></span>
                                     <% end %>
                                 </div>
                             </div><!--// .yui-gf-->
 
-                            <div class="yui-gf no-page-breaker">
+                            <div class="yui-gf">
                                 <div class="yui-u first">
                                     <h2><%= data.resume.headers.jobs %></h2>
                                 </div><!--// .yui-u -->
@@ -172,27 +184,26 @@
                                 <div class="yui-u" class="vcalendar">
                                     <div class="no-page-breaker">
                                     <% data.resume.education.each do |edu| %>
-                                        <span class="education vevent summary vcard">
+                                        <div class="education vevent summary vcard">
                                             <% if edu.url? %>
                                               <h2 class="fn url org"><a href="<%= edu.url %>"><%= edu.name %></a>,
                                             <% else %>
-                                              <h2 class="fn org"><%= edu.name %>,
+                                              <h2 class="fn org"><%= edu.title %></h2>
                                             <% end %>
-                                                <span class="adr">
-                                                    <span class="locality"><%= edu.city %></span>, <span class="region"><%= edu.region %></span>
-                                                    <% if edu.country? %>
-                                                        <span class="country"> <%= edu.country %></span>
-                                                    <% end %>
-                                                </span>
-                                            </h2>
                                             <h4>
+                                              <span class="adr">
+                                                  <span class="locality"><%= edu.city %></span>, <span class="region"><%= edu.region %>,</span>
+                                                  <% if edu.country? %>
+                                                      <span class="country"> <%= edu.country %></span>
+                                                  <% end %>
+                                              </span>
                                                 <abbr class="dtstart" title="<%= edu.dates.start %>"><%= display_date(edu.dates.start) %></abbr>
                                                 <% if edu.dates.end? %>
                                                     - <abbr class="dtend" title="<%= edu.dates.end %>"><%= display_date(edu.dates.end) %></abbr>
                                                 <% end %>
                                             </h4>
-                                            <h3><%= edu.title %> &nbsp; <strong><%= edu.grade if edu.grade? %></strong> </h3>
-                                        </span>
+                                            <p><%= edu.desc %></p>
+                                        </div>
                                     <% end %>
                                     </div>
                                 </div>
@@ -216,7 +227,8 @@
                             </div><!--// .yui-gf -->
                             <% end %>
 
-                            <div class="yui-gf last no-page-breaker">
+                            <% if data.resume.links? %>
+                            <div class="yui-gf no-page-breaker">
 
                                 <div class="yui-u first">
                                     <h2><%= data.resume.headers.links %></h2>
@@ -224,12 +236,26 @@
 
                                 <div class="yui-u">
                                     <ul class="talent no-page-breaker">
-                                    <% data.resume.links.each do |link| %>
+                                    <% data.resume.links.each do |link| %> # not mandatory
                                         <li><%= link_to link.name, link.url %></li>
                                     <% end %>
                                     </ul>
                                 </div><!--// .yui-u -->
                             </div><!--// .yui-gf -->
+                            <% end %>
+
+                            <% if data.resume.other? %>
+                            <div class="yui-gf no-page-breaker">
+
+                                <div class="yui-u first">
+                                    <h2><%= data.resume.headers.other %></h2>
+                                </div><!--// .yui-u -->
+
+                                <div class="yui-u other">
+                                    <p class="summary"><%= Maruku.new(data.resume.other.desc).to_html %></p>
+                                </div>
+                            </div><!--// .yui-gf -->
+                            <% end %>
 
                         </div><!--// .yui-b -->
                     </div><!--// yui-main -->

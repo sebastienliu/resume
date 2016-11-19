@@ -59,7 +59,7 @@ helpers do
         # Change this if you prefer another date format: 
         # http://www.ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html#method-i-strftime
         if date.is_a?(Date)
-            date.strftime("%e %B %Y")
+            date.strftime("%b %Y")
         else
             date
         end

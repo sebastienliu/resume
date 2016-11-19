@@ -1,112 +1,232 @@
 headers:
     profile: Profile
     skills: Skills
-    languages: Languages
-    techs: Technical
+    level: Technical capacities
+    techs: More keywords
     jobs: Experiences
     education: Education
-    links: Links
     download: Download PDF
     age: y/o
     projects: Projects
+    languages: Languages
+    other: Other
+    links: Links
 
 info:
-    name: Full Name
+    name: Jo Boiteau
     # dob: 1980-01-01 # not mandatory
-    shortdesc: Job Title
-    email: example@example.com
-    phone: (313) - 867-5309 # not mandatory
-    homepage: http://example.com/ # not mandatory
-    address:
-        street: 123 Fake Street
-        city: City
-        region: Region # not mandatory
-        postal_code: 12345 # not mandatory
-        country: Country # not mandatory
+    shortdesc: Devops Engineer
+    email: jo@fonkyfonk.net
+    phone: 0432 089 087 # not mandatory
+    #homepage: http://example.com/ # not mandatory
+    #address: # not mandatory
+        #street: 123 Fake Street
+        #city: City
+        #region: Region # not mandatory
+        #postal_code: 12345 # not mandatory
+        #country: Country # not mandatory
     desc: |
-        Progressively evolve cross-platform ideas before impactful infomediaries. Energistically visualize tactical initiatives before cross-media catalysts for change.
+      I’m a problem solver who loves clean implementations to deliver great services to the user.
+
+      I'd like to find an ambitious "to-cloud" mission to work on with a clever team of neat coders.
 
 skills:
-    - name: Web design
-      desc: Assertively exploit wireless initiatives rather than synergistic core competencies.
-    - name: Interface Design
-      desc: Credibly streamline mission-critical value with multifunctional functionalities.
-    - name: Project Direction
-      desc: Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.
+    - name: Problem solver
+      desc: I love to make things work. Determinated efforts will lead to a solution, helping both company and clients to get to a better place.
+    - name: Neat
+      desc: I believe in DRY and commented code. Simplicity of conception. The most concise is often the best approach.
+    - name: Social
+      desc: I'm a people pleaser, a funny character. I naturally build a good mood at work, it enhances work life and stengthen team commitments.
 
-languages:
-    - name: Gibberish
-      level: Native language
-    - name: Manager Speak
-      level: Fluent
+level:
+    - name: Currently proficient with
+      desc: a Linux shell, Bash, Ruby, git, AWS (CFN, EC2, ECS, RDS, IAM, Route53, CloudWatch, VPC...), ansible
+    - name: Used to work everyday with
+      desc: puppet, Ruby on Rails, Haml, Sass, Java
 
 alphabetsoup:
-    - XHTML
-    - CSS
+    - nginx
+    - Varnish
+    - docker
+    - Consul
+    - newrelic
+    - TravisCI
+    - codeship
+    - VPN
+    - Security
+    - Encryption
+    - Agile methodology
+    - Project management
+    - NodeJS
+    - Redis
+    - SQL
+    - REST
+    - APIs
+    - python
     - Javascript
-
-    - Jquery
-    - PHP
-    - CVS / Subversion
-
-    - OS X
-    - Windows XP/Vista
-    - Linux
-
-links:
-    - name: Link1
-      url: http://example.com/
-    - name: Another link
-      url: https://example.com/
+    - Coffeescript
+    - JQuery
 
 jobs:
-    - title: Senior Interface Designer
-      company: Famous Company
-      url: http://example.com/
+    - title: Devops for Publicis
+      company: Nurun (formerly Publicis Australia)
+      #url: http://nurun.com/
       dates:
-          start: 2007-01-02
+          start: 2016-09-04
           end: Present
       desc: |
-          Intrinsicly enable optimal core competencies through corporate relationships.
-
-          Phosfluorescently implement worldwide vortals and client-focused imperatives.
-
-          Conveniently initiate virtual paradigms and top-line convergence.
-
-    - title: Junior Interface Designer
-      company: Technocorp
+          Working on a hosting platform for the websites of the numerous Publicis Group agencies/clients. A simplified web interface covering a mix of Elastic Beanstalk / CloudFormation deployments.
+          
+          Technologies: All AWS, TravisCI/Codeship, NewRelic
+          
+          Concepts: continuous deployment, autoscaling, security (encryption/isolation)
+          
+    - title: Devops on SunBets
+      company: Tabcorp (Contracting for Publicis Australia)
       dates:
-          start: 2005-01-01
-          end: 2007-01-01
+          start: 2015-09-01
+          end: 2016-09-01
       desc: |
-          Progressively reconceptualize multifunctional "outside the box" thinking through inexpensive methods of empowerment.
+          Created a container based deployment platform for Tabcorp numerous environments/services, as well as the Continious Integration system, GoCD driven.
+          
+          Worked within a close team of 4 people, we did implement a fully custom solution based on Consul, OpenResty and ECS to dynamically serve the developers and the need of production load. The solution came up with the build of the new SunBets site/services but did also update the former Tabcorp services.
+          
+          A pivotal experience to my cloud knowledge. A lot about autoscaling, automation & routing.
 
-          Compellingly morph extensive niche markets with mission-critical ideas.
+          Key words: AWS CloudFormation, docker, AWS ECS, Consul, CloudWatch.
 
-          Phosfluorescently deliver bricks-and-clicks strategic theme areas rather than scalable benefits.
+    - title: Devops on Keno
+      company: Tabcorp (Contracting for Publicis Australia)
+      dates:
+          start: 2015-05-01
+          end: 2015-09-01
+      desc: |
+          Lead devops solely responsible of keno.com.au rebranding deployments, independent per state.
+          
+          Beside the short deadline and the last minute introduction to the project, the tricky part was to established a Continuous Delivery ecosystem mixing an old corporate network, restricted jurisdiction network and the AWS cloud.
+
+          Tech involved: Go CD, AWS CloudFormation & Ansible.
+
+          Key lessons: corporate world, diplomacy, complex networking
+
+    - title: WebDev / DevOps
+      company: Publicis Worldwide Australia (FrontFoot aquired)
+      dates:
+          start: 2014-11-01
+          end: 2015-05-01
+      desc: |
+          A few different projects ongoing at the agency, including:
+          - Full stack, Ruby on Rails projects
+          - Android app for Zurich
+          - Devops maintenance for multiple Ruby on Rails sites (AWS/puppet/Capistrano)
+
+    - title: WebDev / DevOps
+      company: FrontFoot
+      dates:
+          start: 2010-12-01
+          end: 2014-10-01
+      desc: |
+          Many projects, mostly responsive/adaptive sites, Ruby on Rails driven, agile methodology in mind.
+          
+          Involved at all different levels:
+          - Project planning
+          - Team management
+          - Client management
+          - Devops setups
+          - Backend & Frontend development
+
+    - title: Dev / DevOps
+      company: Ares (France)
+      dates:
+          start: 2005-05-01
+          end: 2009-09-01
+      desc: |
+          Worked on different missions and clients, including:
+
+          - GIP RECIA, Orléans, France
+            
+            Linux (Debian/Red Hat) admin/development
+
+            Create fully deployable / distribution packaged (rpm/deb) solutions for college servives.
+
+          - BRGM, Orléans, France
+
+            J2EE Web Services development
+
+            Part of a team working on a geo-data mapping service
+            
+          - La Poste, Orléans, France
+
+            PHP/JS development on Moodle, E-Learning platform
+
+            Python development on a Web Service standalone client interacting with a SQL Server
+
+          - Groupe APRI, Tours, France
+
+            Devops
+            
+            Web Services integration
+
+          - Modus, Orléans, France
+
+            Linux admin
+            
+            Bash scripts & Oracle management to feed live data to supply chain.
+
+
+#projects: # this section is not mandatory
+    #- name: ResumeMan
+      #desc: |
+          #Resume Man is an HTML and PDF resume builder made in Ruby with Middleman.
+      #url: https://github.com/reefab/ResumeMan # not mandatory
+      #dates: # not mandatory
+        #start: 2013-02-18
+        #end: 2014-04-05 # not mandatory
+      #location: # not mandatory
+        #city: Florence
+        #region: Tuscany
+        #country: Italy # not mandatory
 
 education: # this section is not mandatory
-    - name: Indiana University
-      url: http://indiana.edu # not mandatory
-      city: Bloomington
-      region: Indiana
-      country: USA # not mandatory
+    - name: North East Wales Institute of Higher Education
+      #url: http://indiana.edu # not mandatory
+      city: Wrexham
+      region: North Whales
+      #country: United Kingdom # not mandatory
       dates:
-        start: 2001-01-01
-        end: 2010-01-01 # not mandatory
-      title: Dual Major, Economics and English
-      grade: 4.0 GPA # not mandatory
+        start: 2004-06-01
+        #end: 2004-06-01 # not mandatory
+      title: BSc Computer Networks
+      desc: Programming, Encryption, OSI Model, Routing, Security
+      #grade: 4.0 GPA # not mandatory
 
-projects: # this section is not mandatory
-    - name: ResumeMan
-      desc: |
-          Resume Man is an HTML and PDF resume builder made in Ruby with Middleman.
-      url: https://github.com/reefab/ResumeMan # not mandatory
-      dates: # not mandatory
-        start: 2013-02-18
-        end: 2014-04-05 # not mandatory
-      location: # not mandatory
-        city: Florence
-        region: Tuscany
-        country: Italy # not mandatory
+    - name: Université de Bretagne-Sud
+      #url: http://indiana.edu # not mandatory
+      city: Vannes
+      region: France
+      #country: United Kingdom # not mandatory
+      dates:
+        start: 2003-06-01
+        #end: 2004-06-01 # not mandatory
+      title: DUT Informatique (French University Programming Degree)
+      desc: Introduction to Object Oriented Programming, Java, Perl, Linux, SQL...
+      #grade: 4.0 GPA # not mandatory
 
+languages:
+    - name: French
+      level: Native language
+    - name: English
+      level: Fluent
+
+#links: # not mandatory
+    #- name: Link1
+      #url: http://example.com/
+    #- name: Another link
+      #url: https://example.com/
+
+other:
+  desc: |
+    - *Visa*: Australian citizen
+    - *Notice period*: 4 weeks
+    - *Part time*: Work 4 days a week (off Wednesdays)
+    - *Interests*: My daugther Lily, people in general, food & wine, surf, slackline.
