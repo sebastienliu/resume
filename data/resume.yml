@@ -89,7 +89,7 @@ jobs:
       desc: |
           Created a container based deployment platform for Tabcorp numerous environments/services, as well as the Continious Integration system, GoCD driven.
           
-          Worked within a close team of 4 people, we did implement a fully custom solution based on Consul, OpenResty and ECS to dynamically serve the developers and the need of production load. The solution came up with the build of the new SunBets site/services but did also update the former Tabcorp services.
+          Worked within a close team of 4 people, we implemented a fully custom solution based on Consul, OpenResty and ECS to dynamically serve the developers and the need of production load. The solution came up with the build of the new SunBets site/services but did also update the former Tabcorp services.
           
           A pivotal experience to my cloud knowledge. A lot about autoscaling, automation & routing.
 
@@ -103,7 +103,7 @@ jobs:
       desc: |
           Lead devops solely responsible of keno.com.au rebranding deployments, independent per state.
           
-          Beside the short deadline and the last minute introduction to the project, the tricky part was to established a Continuous Delivery ecosystem mixing an old corporate network, restricted jurisdiction network and the AWS cloud.
+          Besides the short deadline and the last minute introduction to the project, the tricky part was to establish a Continuous Delivery ecosystem mixing an old corporate network, restricted jurisdiction network and the AWS cloud.
 
           Tech involved: Go CD, AWS CloudFormation & Ansible.
 
