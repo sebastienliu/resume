@@ -66,7 +66,6 @@ a#pdf:hover { background: #222; }
 .job ul { padding-left: 2em; }
 
 .talent { width: 32%; float: left }
-.soup { width: 19%; float: left }
 .yui-u h2 { margin-bottom: 6px; }
 
 .tag { border: 1px solid #ccc; padding: 0.2em; line-height: 2em; white-space: nowrap; }
@@ -81,4 +80,6 @@ a#pdf:hover { background: #222; }
 .other li { padding: 0.5em 0; }
 .other li:first-child, .other li:last-child { padding: 0; }
 
+.yui-gf .yui-u{width:80%;}
+.yui-gf .yui-u.first{width:20%;}
 

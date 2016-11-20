@@ -1,7 +1,7 @@
 headers:
     profile: Profile
     skills: Skills
-    level: Technical capacities
+    level: Technically
     techs: More keywords
     jobs: Experiences
     education: Education
@@ -110,7 +110,7 @@ jobs:
           Key lessons: corporate world, diplomacy, complex networking
 
     - title: WebDev / DevOps
-      company: Publicis Worldwide Australia (FrontFoot aquired)
+      company: Publicis Worldwide Australia (FrontFoot's new owner)
       dates:
           start: 2014-11-01
           end: 2015-05-01
