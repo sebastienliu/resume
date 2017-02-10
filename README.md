@@ -83,3 +83,11 @@ http://resume.dev/
 Otherwise, you'll have to launch the previewing server manually:
 
     bundle exec middleman
+
+## Deploiement
+
+I use [github pages](https://pages.github.com/) to host my resume, it's handy and classy at once :)
+
+To easily deploy the build files into the branch `gh-pages` withouth overwritting everything, I use the `git subtree` feature (more details [here](https://gist.github.com/cobyism/4730490))
+
+    git subtree push --prefix build origin gh-pages
