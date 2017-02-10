@@ -54,8 +54,11 @@ em { font-size: medium; }
 
 /* //-- section styles -- */
 
-a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
-a#pdf:hover { background: #222; }
+.links-line { width: 100%; height: 0; }
+a.pdf-link:hover { background: #222; }
+a.pdf-link { background: #666; color: white; padding: 6px 12px; margin-bottom: 6px; text-decoration: none; float: right; }
+.url { text-decoration: underline; }
+.url a:hover { color: #AAA; }
 
 .job, .education{ position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
 .job h4 { position: absolute; top: 0.35em; right: 0 }
