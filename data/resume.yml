@@ -9,230 +9,144 @@ headers:
     age: y/o
     projects: Projects
     languages: Languages
+    certifications: Certifications
     other: Other
     links: Links
 
 info:
-    name: Jo Boiteau
-    # dob: 1980-01-01 # not mandatory
-    shortdesc: Devops Engineer
-    email: jo@fonkyfonk.net
-    linkedin: https://www.linkedin.com/in/josephboiteau/ # not mandatory
-    phone: 0432 089 087 # not mandatory
-    #homepage: http://example.com/ # not mandatory
-    #address: # not mandatory
-        #street: 123 Fake Street
-        #city: City
-        #region: Region # not mandatory
-        #postal_code: 12345 # not mandatory
-        #country: Country # not mandatory
+    name: Siwen LIU (Sebastien)
+    shortdesc: Senior Devops Engineer
+    email: sebastien.liu@gmail.com
+    linkedin:
+    phone: 0449 801 326 # not mandatory
     desc: |
       I like to refer of myself as building technology to improve the world we live in.
 
       I love automated fluid processes which empower the devs to build their needs.
 
-      I'd like to find an ambitious "to-cloud" mission to work on with a clever group of individuals.
+      I would to find an ambitious "to-cloud" mission to work on with a clever group of individuals.
 
 skills:
     - name: Problem solver
       desc: I love to make things work. Determinated efforts will lead to a solution, helping both company and clients to get to a better place.
     - name: Neat
       desc: I believe in DRY and commented code. Simplicity of conception. The most concise is often the best approach.
-    - name: Social
-      desc: I'm a people pleaser, a funny character. I naturally build a good mood at work, it enhances work life and stengthen team commitments.
 
 level:
     - name: Currently proficient with
-      desc: a Linux shell, Bash, Ruby, git, AWS (CFN, EC2, ECS, RDS, IAM, Route53, CloudWatch, VPC...), ansible
+      desc: Bash, git, AWS (CFN, EC2, ECS, RDS, IAM, Route53, CloudWatch, VPC, Codedeploy...), Ansible, Terraform, Packer, Docker
     - name: Used to work everyday with
-      desc: puppet, Ruby on Rails, Haml, Sass, Java
+      desc: puppet, data centre, Capistrano, Rails
 
 alphabetsoup:
-    - nginx
+    - AWS
+    - Nginx
     - Varnish
-    - docker
+    - Docker
+    - Terraform
+    - Packer
     - Consul
-    - newrelic
+    - Newrelic
     - TravisCI
-    - codeship
+    - Codeship
     - VPN
     - Security
     - Encryption
     - Agile methodology
     - Project management
-    - NodeJS
-    - Redis
     - SQL
-    - REST
-    - APIs
-    - python
-    - Javascript
-    - Coffeescript
-    - JQuery
 
 jobs:
-    - title: Devops for Publicis
-      company: Nurun (formerly Publicis Australia)
+    - title: Senior Devops Engineer
+      company: Nurun Australia (Part of the Publicis Australia Group)
       url: http://nurun.com/
       dates:
-          start: 2016-09-04
+          start: 2016-09-01
           end: Present
       desc: |
-          Working on a hosting platform for the numerous websites of the Publicis Group agencies/clients.
-          Building a simplified command line API to enable production blue/green deployments in 1 line.
+          Working on a hosting platform for the numerous websites of the Publicis Group agencies/clients around Australia.
 
           Technologies: Full AWS (ECS/CloudFormation/ElasticBeanstalk/RDS/CloudWatch,IAM,S3...), TravisCI/Codeship, NewRelic
 
-          Concepts: continuous deployment, autoscaling, security (encryption/isolation)
+          Concepts: continuous integration, continuous deployment, autoscaling, security (encryption/isolation)
 
-    - title: Devops on SunBets
-      company: Tabcorp (Contracting for Publicis Australia)
-      url: http://tab.com.au
+          Key words: Terraform, Packer, Docker, Codeship, VPN Gateway
+
+    - title: Devops Engineer
+      company: Racing UK (Contracting for Publicis Australia)
+      url: https://www.racinguk.com
       dates:
           start: 2015-09-01
           end: 2016-09-01
       desc: |
-          Created a container based deployment platform for Tabcorp numerous environments/services, as well as the Continious Integration system, GoCD driven.
+          Created a container based deployment platform for RacingUK numerous environments/services, as well as the Continious Integration system, Codeship driven.
 
-          Worked within a close team of 4 people, we implemented a fully custom solution based on Consul, OpenResty and ECS to dynamically serve the developers and the need of production load. The solution came up with the build of the new SunBets site/services but did also update the former Tabcorp services.
+          Worked within a close team of 3 people, we implemented a fully customised solution based on Consul, ECS to dynamically serve the developers and the need of production load. The solution came up with the build of the new Racing UK site/services.
 
           A pivotal experience to my cloud knowledge. A lot about autoscaling, automation & routing.
 
           Key words: AWS CloudFormation, docker, AWS ECS, Consul, CloudWatch.
 
-    - title: Devops on Keno
-      company: Tabcorp (Contracting for Publicis Australia)
-      url: http://tab.com.au
-      dates:
-          start: 2015-05-01
-          end: 2015-09-01
-      desc: |
-          Lead devops solely responsible of keno.com.au rebranding deployments, independent per state.
-
-          Besides the short deadline and the last minute introduction to the project, the tricky part was to establish a Continuous Delivery ecosystem mixing an old corporate network, restricted jurisdiction network and the AWS cloud.
-
-          Tech involved: Go CD, AWS CloudFormation & Ansible.
-
-          Key lessons: corporate world, diplomacy, complex networking
-
-    - title: WebDev / DevOps
-      company: Publicis Worldwide Australia (FrontFoot's new owner)
-      url: http://www.publicis.com.au/
-      dates:
-          start: 2014-11-01
-          end: 2015-05-01
-      desc: |
-          A few different projects ongoing at the agency, including:
-          - Full stack, Ruby on Rails projects
-          - Android app for Zurich
-          - Devops maintenance for multiple Ruby on Rails sites (AWS/puppet/Capistrano)
-
-    - title: WebDev / DevOps
+    - title: System Administrator
       company: FrontFoot
       dates:
-          start: 2010-12-01
-          end: 2014-10-01
+          start: 2012-10-01
+          end: 2015-09-01
       desc: |
-          Many projects, mostly responsive/adaptive sites, Ruby on Rails driven, agile methodology in mind.
+        Many projects, mostly created hybrid infrastructure for in-house and Telstra PocketNews system, agile methodology in mind.
 
           Involved at all different levels:
           - Project planning
           - Team management
           - Client management
           - Devops setups
-          - Backend & Frontend development
 
-    - title: Dev / DevOps
-      company: Ares (France)
+    - title: Senior Automation Engineer
+      company: STMicroelectronics
+      location: Shanghai, China
       dates:
-          start: 2005-05-01
-          end: 2009-09-01
+          start: 2005
+          end: 2010
       desc: |
-          Worked on different missions and clients, including:
+        Implemented scripts to build VHD hardware design language to models.
 
-          - GIP RECIA, Orléans, France
+        Key words: Solaris/Linux, Perl
 
-            Linux (Debian/Red Hat) admin/development
+projects:
+    - name: Racing UK
+      desc: |
+        Led the application aritechture design, and delivered a high available (multi-region disaster recovery, "pilot-light" environment ), scalable, Predictable performance racing website.
 
-            Create fully deployable / distribution packaged (rpm/deb) solutions for college servives.
+        The racing website can handle thousands of customers watching live streams, bet at real time, update blogs during racing carnivals.
 
-          - BRGM, Orléans, France
+    - name: WizardOfOdds
+      url: https://wizardofodds.com.au
+      desc: |
+        Implemented the infrastructure and automated deployment process and autoscaling.
 
-            J2EE Web Services development
-
-            Part of a team working on a geo-data mapping service
-
-          - La Poste, Orléans, France
-
-            PHP/JS development on Moodle, E-Learning platform
-
-            Python development on a Web Service standalone client interacting with a SQL Server
-
-          - Groupe APRI, Tours, France
-
-            Devops
-
-            Web Services integration
-
-          - Modus, Orléans, France
-
-            Linux admin
-
-            Bash scripts & Oracle management to feed live data to supply chain.
-
-
-#projects: # this section is not mandatory
-    #- name: ResumeMan
-      #desc: |
-          #Resume Man is an HTML and PDF resume builder made in Ruby with Middleman.
-      #url: https://github.com/reefab/ResumeMan # not mandatory
-      #dates: # not mandatory
-        #start: 2013-02-18
-        #end: 2014-04-05 # not mandatory
-      #location: # not mandatory
-        #city: Florence
-        #region: Tuscany
-        #country: Italy # not mandatory
+        Integrated in smh.com.au and delivered 50-60ms web response time during Melbourne Cup Days.
 
 education: # this section is not mandatory
-    - name: North East Wales Institute of Higher Education
-      #url: http://indiana.edu # not mandatory
-      city: Wrexham
-      region: North Whales
-      #country: United Kingdom # not mandatory
+    - name: Civil Aviation University of China
       dates:
-        start: 2004-06-01
+        start: 1999-09-01
         #end: 2004-06-01 # not mandatory
-      title: BSc Computer Networks
-      desc: Programming, Encryption, OSI Model, Routing, Security
-      #grade: 4.0 GPA # not mandatory
-
-    - name: Université de Bretagne-Sud
-      #url: http://indiana.edu # not mandatory
-      city: Vannes
-      region: France
-      #country: United Kingdom # not mandatory
-      dates:
-        start: 2003-06-01
-        #end: 2004-06-01 # not mandatory
-      title: DUT Informatique (French University Programming Degree)
-      desc: Introduction to Object Oriented Programming, Java, Perl, Linux, SQL...
+      title: BSc Computer Science
+      desc: Programming, Routing, Security
       #grade: 4.0 GPA # not mandatory
 
 languages:
-    - name: French
+    - name: Mandarin
       level: Native language
     - name: English
       level: Fluent
 
-#links: # not mandatory
-    #- name: Link1
-      #url: http://example.com/
-    #- name: Another link
-      #url: https://example.com/
+certifications:
+    - name: AWS Certified Solutions Architect Associate
+    - name: AWS Certified SysOps Associate
 
 other:
   desc: |
-    - *Visa*: Australian citizen
+    - *Visa*: Australian Permanent Resident
     - *Notice period*: 4 weeks
-    - *Interests*: My daugther Lily, people in general, food & wine, surf, slackline.
+    - *Interests*: My family, cooking, playing table tennis
