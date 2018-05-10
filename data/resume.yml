@@ -142,9 +142,10 @@ languages:
       level: Fluent
 
 certifications:
-  desc: |
-    AWS Certified Solutions Architect Associate
-    AWS Certified SysOps Associate
+  - name: AWS Certifications
+    desc: |
+      - AWS Certified Solutions Architect Associate
+      - AWS Certified SysOps Associate
 
 other:
   desc: |
