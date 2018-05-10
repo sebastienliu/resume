@@ -144,8 +144,9 @@ languages:
 certifications:
   - name: AWS Certifications
     desc: |
-      - AWS Certified Solutions Architect Associate
-      - AWS Certified SysOps Associate
+      AWS Certified Solutions Architect Associate
+
+      AWS Certified SysOps Associate
 
 other:
   desc: |
