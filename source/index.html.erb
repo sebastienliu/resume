@@ -230,6 +230,23 @@
                             </div><!--// .yui-gf -->
                             <% end %>
 
+                            <% if data.resume.certifications? %>
+                            <div class="yui-gf no-page-breaker">
+                                <div class="yui-u first">
+                                    <h2><%= data.resume.headers.certifications %></h2>
+                                </div><!--// .yui-u -->
+
+                                <div class="yui-u">
+                                    <% data.resume.certifications.each do |lang| %>
+                                    <div class="talent">
+                                        <h2><%= lang.name %></h2>
+                                        <p><%= lang.level %></p>
+                                    </div>
+                                    <% end %>
+                                </div><!--// .yui-u -->
+                            </div><!--// .yui-gf -->
+                            <% end %>
+
                             <% if data.resume.links? %>
                             <div class="yui-gf no-page-breaker">
 
