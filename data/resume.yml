@@ -130,8 +130,8 @@ education: # this section is not mandatory
     - name: Civil Aviation University of China
       dates:
         start: 1999-09-01
-        #end: 2004-06-01 # not mandatory
-      title: BSc Computer Science
+        end: 2003-06-30 # not mandatory
+      title: Bachelor Sc Computer Science
       desc: Programming, Routing, Security
       #grade: 4.0 GPA # not mandatory
 
@@ -142,8 +142,9 @@ languages:
       level: Fluent
 
 certifications:
-    - name: AWS Certified Solutions Architect Associate
-    - name: AWS Certified SysOps Associate
+  desc: |
+    AWS Certified Solutions Architect Associate
+    AWS Certified SysOps Associate
 
 other:
   desc: |
